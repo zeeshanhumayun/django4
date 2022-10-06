@@ -16,7 +16,7 @@ services:
                     python manage.py migrate &&
                     python manage.py initiate_admin &&
                     python manage.py collectstatic &&
-                    gunicorn sampleApp.wsgi:application --bind 0.0.0.0:${APP_PORT}"
+                    gunicorn sampleApp.wsgi:application --bind 0.0.0.0"
     volumes:
       - .:/microservice:rw # map data and files from parent directory in host to microservice directory in docker containe
       - static_volume:/home/app/microservice/static
