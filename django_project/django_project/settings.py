@@ -28,7 +28,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 #DEBUG = True
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['http://zeeshan2.techenablers.info/', 'zeeshan2.techenablers.info']
 
 
 # Application definition
