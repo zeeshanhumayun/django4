@@ -21,7 +21,7 @@ pipeline {
 		}
 		stage('Run') {            
             steps {
-            	sh 'whoami'
+            	sh 'whoami zeeshan sahib'
             	//sh 'echo ${WORKSPACE}'
             	//sh 'docker run -d -p 80:80 hello_laravel_docker_image'
             	//sh 'rsync -rv --exclude=.git ${WORKSPACE}/.  /var/www/zeeshan1/html'
