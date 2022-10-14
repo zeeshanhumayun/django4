@@ -26,9 +26,9 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = True
-DEBUG = False
+DEBUG = os.getenv('DEBUG')
 
-ALLOWED_HOSTS = ['http://zeeshan2.techenablers.info/', 'zeeshan2.techenablers.info']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
