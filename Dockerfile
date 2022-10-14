@@ -25,7 +25,7 @@ RUN apk update \
 # install dependencies
 RUN pip install --upgrade pip
 # copy project
-COPY ./requirements.txt $MICRO_SERVICE
+COPY . $MICRO_SERVICE
 RUN pip install -r requirements.txt
 COPY ./entrypoint.sh $MICRO_SERVICE
 
